@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjeta</title>
+    <style>
+        .ativo {
+            background-color: #4CAF50; /* Cor de fundo quando ativo */
+            color: white;
+        }
+        .dez, .quinze, .vinte, .calcular {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .calcular{
+            background-color: deeppink;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de Gorjeta</h1>
+        <label for="conta">Valor da conta: R$</label>
+        <input type="number" id="conta" class="conta" min="0" step="0.01" placeholder="Digite o valor da conta">
+    </div>
+
+    <div>
+        <h3>Escolha o percentual da gorjeta:</h2>
+        <button class="dez">10%</button>
+        <button class="quinze">15%</button>
+        <button class="vinte">20%</button>
+    </div>
+
+    <div>
+        <button class="calcular">Calcular</button>
+    </div>
+
+    <div>
+        <p class="gorjeta">Gorjeta: R$ 0.00</p>
+        <p class="total">Total: R$ 0.00</p>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
